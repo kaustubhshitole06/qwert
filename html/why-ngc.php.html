@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Why NGC | N. Gamadia & Co., Ahmedabad</title>
+  
+  <!-- SEO Meta -->
+  <meta name="description" content="N. Gamadia & Co. is a top company for business valuations advisory in India. Leading Chartered Accountant firm in Ahmedabad, Gujarat." />
+  <meta property="og:title" content="Why NGC | N. Gamadia & Co." />
+  <meta property="og:description" content="Top Company For Business Valuations Advisory in India - Why choose N. Gamadia & Co." />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome CDN -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1e40af', // Blue color for primary elements
+            'primary-dark': '#1e3a8a', // Darker blue for hover states
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    .icon-list li {
+      margin-bottom: 8px;
+    }
+    
+    .icon-list i {
+      color: #1e40af;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body class="font-sans bg-gray-100 text-gray-700">
+
+  <!-- Top Bar -->
+  <div class="bg-gray-900 text-gray-100 text-sm">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center py-2">
+      <ul class="flex space-x-6">
+        <li class="flex items-center space-x-2"><i class="fas fa-map-marker-alt"></i> <span>Ahmedabad, Gujarat, India</span></li>
+        <li class="flex items-center space-x-2"><i class="fas fa-envelope"></i> <span>info@ngamadia.com</span></li>
+        <li class="flex items-center space-x-2"><i class="fas fa-phone"></i> <span>+91 98252 05794</span></li>
+      </ul>
+      <div class="hidden md:flex space-x-4">
+        <a href="#" class="hover:text-primary" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-primary" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-primary" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+ <!-- Header & Navigation -->
+<header class="sticky top-0 backdrop-blur bg-white/80 shadow-md z-50">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-3 flex items-center justify-between">
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="../images/ngamadia.png" alt="N. Gamadia & Co." class="h-10 w-auto" />
+      <div class="font-semibold text-xl text-primary">N. Gamadia &amp; Co.</div>
+    </a>
+
+    <!-- Mobile menu button -->
+    <button id="navToggle" class="md:hidden p-2 rounded-full border border-gray-300 hover:bg-gray-100" aria-label="Menu">
+      <i class="fa fa-bars"></i>
+    </button>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
+      <a class="hover:text-primary" href="index.html">Home</a>
+
+      <!-- About Dropdown -->
+      <div class="relative group">
+        <button class="flex items-center hover:text-primary focus:outline-none">
+          About <i class="fa fa-chevron-down text-xs ml-1"></i>
+        </button>
+        <div class="absolute left-0 hidden group-hover:block bg-white rounded-xl shadow-md ring-1 ring-gray-200 p-4 w-64 z-50">
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="about-us.php.html">About N. Gamadia &amp; Co.</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="why-ngc.php.html">Why NGC</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="management.php.html">Management</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="our-team.php.html">Our Team</a>
+        </div>
+      </div>
+
+      <a class="hover:text-primary" href="kpo.php.html">KPO</a>
+      <a class="hover:text-primary" href="gallery.php.html">Gallery</a>
+
+      <!-- Services Dropdown -->
+      <div class="relative group">
+        <button class="flex items-center hover:text-primary focus:outline-none">
+          Services <i class="fa fa-chevron-down text-xs ml-1"></i>
+        </button>
+        <div class="absolute left-0 hidden group-hover:block bg-white rounded-xl shadow-md ring-1 ring-gray-200 p-4 w-72 z-50">
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="audit-and-assurance.php.html">Audit & Assurance</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="taxation.php.html">Taxation</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="accounting-advisory.php.html">Accounting Advisory Services</a>
+          
+        </div>
+      </div>
+
+      <a class="hover:text-primary" href="forms.php.html">Forms</a>
+      <a class="hover:text-primary" href="contact.php.html">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Mobile Drawer -->
+  <div id="navDrawer" class="hidden md:hidden px-4 py-4 bg-white rounded-xl shadow-md space-y-2" role="dialog" aria-modal="true">
+    <a class="block px-3 py-2 rounded-lg hover:bg-gray-100" href="index.html">Home</a>
+
+    <!-- About Dropdown -->
+    <details class="px-3 py-2 rounded-lg hover:bg-gray-100">
+      <summary class="cursor-pointer flex items-center justify-between">About <i class="fa fa-chevron-down text-xs ml-1"></i></summary>
+      <div class="ml-4 mt-2 space-y-2">
+        <a class="block hover:text-primary" href="about-us.php.html">About N. Gamadia &amp; Co.</a>
+        <a class="block hover:text-primary" href="why-ngc.php.html">Why NGC</a>
+        <a class="block hover:text-primary" href="management.php.html">Management</a>
+        <a class="block hover:text-primary" href="our-team.php.html">Our Team</a>
+      </div>
+    </details>
+
+    <a class="block px-3 py-2 rounded-lg hover:bg-gray-100" href="kpo.php.html">KPO</a>
+    <a class="block px-3 py-2 rounded-lg hover:bg-gray-100" href="gallery.php.html">Gallery</a>
+
+    <!-- Services Dropdown -->
+    <details class="px-3 py-2 rounded-lg hover:bg-gray-100">
+      <summary class="cursor-pointer flex items-center justify-between">Services <i class="fa fa-chevron-down text-xs ml-1"></i></summary>
+      <div class="ml-4 mt-2 space-y-2">
+        <a class="block hover:text-primary" href="audit-and-assurance.php.html">Audit & Assurance</a>
+        <a class="block hover:text-primary" href="taxation.php.html">Taxation</a>
+        <a class="block hover:text-primary" href="accounting-advisory.php.html">Accounting Advisory Services</a>
+      
+      </div>
+    </details>
+
+    <a class="block px-3 py-2 rounded-lg hover:bg-gray-100" href="forms.php.html">Forms</a>
+    <a class="block px-3 py-2 rounded-lg hover:bg-gray-100" href="contact.php.html">Contact</a>
+  </div>
+</header>
+
+ 
+  <!-- Hero Banner -->
+  <section class="relative bg-cover bg-center h-96" style="background-image: url('../images/Why-Choose-Us-Banner.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center px-4 py-20 text-white">
+      <div class="max-w-3xl text-left">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Why NGC</h1>
+        <p class="mb-6 text-lg md:text-xl">Top Company For Business Valuations Advisory in India - Discover why N. Gamadia & Co. stands out.</p>
+        <a href="contact.php" class="inline-block px-6 py-3 bg-primary text-white rounded-xl font-semibold hover:bg-primary-dark transition">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-4 py-12 space-y-12">
+
+    <!-- Section: About Why NGC -->
+    <section class="bg-white p-8 rounded-lg shadow-md">
+      <h2 class="text-3xl font-bold mb-4 text-gray-800">Why NGC - Top Company For Business Valuations Advisory in India</h2>
+      <p class="mb-4 text-gray-600" align="justify">
+        N. Gamadia & Co. has established itself as a premier firm for business valuations and advisory services in India. Our experience spans over two decades across varied industries and service segments of the economy.
+      </p>
+      <p class="mb-4 text-gray-600" align="justify">
+        Many of our clients are market leaders in their respective industries, and our long-standing associations with them stand as testimony to our success and commitment to excellence.
+      </p>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="grid md:grid-cols-3 gap-8">
+      <div class="bg-gray-50 p-6 rounded-lg shadow text-center">
+        <div class="text-4xl font-bold text-primary mb-2">20+</div>
+        <div class="text-lg font-semibold">Years of Professional Experience</div>
+      </div>
+      <div class="bg-gray-50 p-6 rounded-lg shadow text-center">
+        <div class="text-4xl font-bold text-primary mb-2">15+</div>
+        <div class="text-lg font-semibold">Industries Sector Expertise</div>
+      </div>
+      <div class="bg-gray-50 p-6 rounded-lg shadow text-center">
+        <div class="text-4xl font-bold text-primary mb-2">3</div>
+        <div class="text-lg font-semibold">Consecutive Peer Review Certifications</div>
+      </div>
+    </section>
+
+    <!-- Industry Experience Section -->
+    <section class="bg-white p-8 rounded-lg shadow-md">
+      <h3 class="text-2xl font-bold mb-4 text-gray-800">Experience of Working in Different Industries</h3>
+      <p class="mb-6 text-gray-600" align="justify">
+        Our extensive experience across diverse sectors enables us to understand unique industry challenges and provide tailored solutions. We are proud to be associated with market leaders across various industries:
+      </p>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h4 class="text-xl font-semibold mb-3 text-primary">Industry Expertise</h4>
+          <ul class="icon-list">
+            <li><i class="fas fa-arrow-circle-right"></i>Hospitality – Hotel & Restaurants</li>
+            <li><i class="fas fa-arrow-circle-right"></i>Infrastructure – Construction & Amenities</li>
+            <li><i class="fas fa-arrow-circle-right"></i>Automobiles & Capital Goods</li>
+            <li><i class="fas fa-arrow-circle-right"></i>Health & Wellness</li>
+            <li><i class="fas fa-arrow-circle-right"></i>Government Sector</li>
+            <li><i class="fas fa-arrow-circle-right"></i>Industrial Housekeeping Services</li>
+            <li><i class="fas fa-arrow-circle-right"></i>Tours and Traveling</li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-xl font-semibold mb-3 text-primary">Additional Sectors</h4>
+          <ul class="icon-list">
+            <li><i class="fas fa-arrow-circle-right"></i>Oil & Gas</li>
+            <li><i class="fas fa-arrow-circle-right"></i>Banking & Finance</li>
+            <li><i class="fas fa-arrow-circle-right"></i>Plastic Extrusion & Polymer</li>
+            <li><i class="fas fa-arrow-circle-right"></i>Information Technology</li>
+            <li><i class="fas fa-arrow-circle-right"></i>Financial Services</li>
+            <li><i class="fas fa-arrow-circle-right"></i>Retail</li>
+            <li><i class="fas fa-arrow-circle-right"></i>And many more...</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Staff Section -->
+    <section class="bg-white p-8 rounded-lg shadow-md">
+      <h3 class="text-2xl font-bold mb-4 text-gray-800">Professional & Skilled Staff</h3>
+      <p class="mb-4 text-gray-600" align="justify">
+        NGC has a balanced mix of experienced long-associated staff along with newly qualified young professionals and semi-qualified staff. Our professional team includes experts with qualifications beyond Chartered Accountancy, such as CMAs, MBAs, Law Graduates, and Company Secretaries.
+      </p>
+      <p class="mb-4 text-gray-600" align="justify">
+        This diverse expertise enables us to evaluate each client transaction from multiple perspectives, ensuring the best possible decisions and outcomes.
+      </p>
+      <div class="grid md:grid-cols-3 gap-6 mt-6">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white mx-auto mb-3">
+            <i class="fas fa-user-graduate text-2xl"></i>
+          </div>
+          <h4 class="font-semibold">Qualified Professionals</h4>
+          <p class="text-sm text-gray-600">Team of CAs, CMAs, MBAs, and legal experts</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white mx-auto mb-3">
+            <i class="fas fa-briefcase text-2xl"></i>
+          </div>
+          <h4 class="font-semibold">Diverse Experience</h4>
+          <p class="text-sm text-gray-600">Mix of experienced and young professionals</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white mx-auto mb-3">
+            <i class="fas fa-handshake text-2xl"></i>
+          </div>
+          <h4 class="font-semibold">Holistic Approach</h4>
+          <p class="text-sm text-gray-600">Multi-perspective evaluation of transactions</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Domain Knowledge Section -->
+    <section class="bg-white p-8 rounded-lg shadow-md">
+      <h3 class="text-2xl font-bold mb-4 text-gray-800">Domain Knowledge of Clients' Business</h3>
+      <p class="mb-4 text-gray-600" align="justify">
+        At NGC, we cultivate a culture of deep understanding of our clients' businesses and the industry environments in which they operate. Obtaining domain knowledge helps us visualize and analyze different situations, enabling us to provide the best advice considering all relevant aspects.
+      </p>
+      <p class="mb-4 text-gray-600" align="justify">
+        This approach ensures that our solutions are not just technically sound but also practically applicable to our clients' specific contexts.
+      </p>
+    </section>
+
+    <!-- Accreditations Section -->
+    <section class="bg-white p-8 rounded-lg shadow-md">
+      <h3 class="text-2xl font-bold mb-4 text-gray-800">Peer Reviewed Firm, Empanelled with Various Bodies</h3>
+      <p class="mb-4 text-gray-600" align="justify">
+        NGC has been successfully Peer Reviewed as per the norms of the Institute of Chartered Accountants of India (ICAI) since 2005. The firm has been Peer Reviewed by Peer Review Auditors for three consecutive terms: 2006-2008, 2009-2011, and 2013-2015.
+      </p>
+      <p class="mb-4 text-gray-600" align="justify">
+        NGC is empanelled with various authorities and bodies including the Comptroller and Auditor General of India (CAG), Reserve Bank of India (RBI), and numerous other institutions, banks, and organizations.
+      </p>
+      <div class="grid md:grid-cols-2 gap-6 mt-6">
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h4 class="font-semibold text-primary mb-2">Peer Review Certifications</h4>
+          <ul class="list-disc pl-5 text-gray-600">
+            <li>2006-2008: Successfully Peer Reviewed</li>
+            <li>2009-2011: Consecutive Peer Review</li>
+            <li>2013-2015: Third Term Peer Review</li>
+          </ul>
+        </div>
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h4 class="font-semibold text-primary mb-2">Empanelled With</h4>
+          <ul class="list-disc pl-5 text-gray-600">
+            <li>Comptroller and Auditor General of India (CAG)</li>
+            <li>Reserve Bank of India (RBI)</li>
+            <li>Various Banks & Financial Institutions</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quality Policy Section -->
+    <section class="bg-white p-8 rounded-lg shadow-md">
+      <h3 class="text-2xl font-bold mb-4 text-gray-800">Our Quality Policy</h3>
+      <p class="mb-4 text-gray-600" align="justify">
+        Our firm believes that quality is a matter of attitude, discipline, and proficiency in the subject matter. We are committed to providing qualitative, timely, and customized services and solutions catering to the specific needs of our various clients consistently.
+      </p>
+      <p class="mb-4 text-gray-600" align="justify">
+        This commitment to quality has established N. Gamadia & Co. as a <strong>Top Company For Business Valuations Advisory in India</strong>.
+      </p>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-gradient-to-r from-primary to-primary-dark text-white p-8 rounded-2xl text-center">
+      <h2 class="text-3xl font-bold mb-4">Ready to Experience the NGC Difference?</h2>
+      <p class="mb-6 max-w-2xl mx-auto">Partner with us for comprehensive business valuation and advisory services tailored to your specific needs.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="contact.php" class="inline-block px-6 py-3 bg-white text-primary rounded-xl font-semibold hover:bg-gray-100 transition">Contact Us Today</a>
+        <a href="tel:+919825205794" class="inline-block px-6 py-3 border-2 border-white text-white rounded-xl font-semibold hover:bg-white hover:text-primary transition">
+          <i class="fas fa-phone mr-2"></i> Call Now
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-200 py-8 mt-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8 mb-6">
+        <!-- Get In Touch -->
+        <div>
+          <h5 class="text-xl font-semibold mb-4">Get In Touch</h5>
+          <ul class="space-y-2 text-sm">
+            <li><strong>Address:</strong> 410, "SHAIL", Opp. Navrangpura Telephone Exchange, Nr. Madhusudan House, Off. C. G. Road, Ahmedabad-380006</li>
+            <li><strong>Call Us:</strong> (079) 26442206 / 30615664</li>
+            <li><strong>Email:</strong> <a href="mailto:info@ngamadia.com" class="hover:underline">info@ngamadia.com</a></li>
+          </ul>
+        </div>
+        <!-- About Links -->
+        <div>
+          <h5 class="text-xl font-semibold mb-4">About</h5>
+          <ul class="space-y-2 text-sm">
+            <li><a href="about-us.php" class="hover:text-primary transition">About N. Gamadia & Co.</a></li>
+            <li><a href="why-ngc.php" class="hover:text-primary transition">Why NGC</a></li>
+            <li><a href="management.php" class="hover:text-primary transition">Management</a></li>
+            <li><a href="our-team.php" class="hover:text-primary transition">Our Team</a></li>
+          </ul>
+        </div>
+        <!-- Resources -->
+        <div>
+          <h5 class="text-xl font-semibold mb-4">Resources</h5>
+          <ul class="space-y-2 text-sm">
+            <li><a href="forms.php" class="hover:text-primary transition">Forms</a></li>
+            <li><a href="kpo.php" class="hover:text-primary transition">KPO</a></li>
+            <li><a href="news-updates.php" class="hover:text-primary transition">News & Updates</a></li>
+            <li><a href="gallery.php" class="hover:text-primary transition">Gallery</a></li>
+          </ul>
+        </div>
+        <!-- Newsletter -->
+        <div>
+          <h5 class="text-xl font-semibold mb-4">Newsletter</h5>
+          <p class="mb-2 text-sm">Subscribe for updates. No spam, ever.</p>
+          <form class="flex space-x-2" onsubmit="event.preventDefault(); newsletterSubscribe();">
+            <input type="email" id="newsletter-email" placeholder="Your Email" required class="flex-1 px-3 py-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary bg-gray-800 text-white" />
+            <button type="submit" class="px-4 py-2 bg-primary rounded-xl hover:bg-primary-dark transition">
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </button>
+          </form>
+          <div class="mt-4 flex space-x-4 text-xl justify-center md:justify-start">
+            <a href="#" class="hover:text-primary"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="hover:text-primary"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="hover:text-primary"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="hover:text-primary"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Bottom bar -->
+      <div class="border-t border-gray-700 pt-4 flex flex-col md:flex-row items-center justify-between text-sm">
+        <div>&copy; 2024 N. Gamadia &amp; Co. | <a href="#" class="hover:underline hover:text-primary">Terms & Conditions</a></div>
+        <img src="../images/ngamadia-white.png" alt="N. Gamadia & Co." class="h-12 opacity-80 my-4 md:my-0" />
+        <div>Designed by <a href="index.html" target="_blank" class="hover:underline hover:text-primary">City Business Group</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    // Mobile menu toggle
+    document.getElementById('menu-toggle').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+    
+    // Newsletter subscription
+    function newsletterSubscribe() {
+      const email = document.getElementById('newsletter-email').value;
+      alert(`Thank you for subscribing with ${email}! We'll keep you updated.`);
+      document.getElementById('newsletter-email').value = '';
+    }
+  </script>
+</body>
+</html>

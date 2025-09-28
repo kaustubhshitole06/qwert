@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>N. GAMADIA & CO. - Chartered Accountants Ahmedabad</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-100 text-gray-800">
+
+ <!-- Header & Navigation -->
+<header class="sticky top-0 backdrop-blur bg-white/80 shadow-md z-50">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-3 flex items-center justify-between">
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="../images/ngamadia.png" alt="N. Gamadia & Co." class="h-10 w-auto" />
+      <div class="font-semibold text-xl text-primary">N. Gamadia &amp; Co.</div>
+    </a>
+
+    <!-- Mobile menu button -->
+    <button id="navToggle" class="md:hidden p-2 rounded-full border border-gray-300 hover:bg-gray-100" aria-label="Menu">
+      <i class="fa fa-bars"></i>
+    </button>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
+      <a class="hover:text-primary" href="index.html">Home</a>
+
+      <!-- About Dropdown -->
+      <div class="relative group">
+        <button class="flex items-center hover:text-primary focus:outline-none">
+          About <i class="fa fa-chevron-down text-xs ml-1"></i>
+        </button>
+        <div class="absolute left-0 hidden group-hover:block bg-white rounded-xl shadow-md ring-1 ring-gray-200 p-4 w-64 z-50">
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="about-us.php.html">About N. Gamadia &amp; Co.</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="why-ngc.php.html">Why NGC</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="management.php.html">Management</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="our-team.php.html">Our Team</a>
+        </div>
+      </div>
+
+      <a class="hover:text-primary" href="kpo.php.html">KPO</a>
+      <a class="hover:text-primary" href="gallery.php.html">Gallery</a>
+
+      <!-- Services Dropdown -->
+      <div class="relative group">
+        <button class="flex items-center hover:text-primary focus:outline-none">
+          Services <i class="fa fa-chevron-down text-xs ml-1"></i>
+        </button>
+        <div class="absolute left-0 hidden group-hover:block bg-white rounded-xl shadow-md ring-1 ring-gray-200 p-4 w-72 z-50">
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="audit-and-assurance.php.html">Audit & Assurance</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="taxation.php.html">Taxation</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="accounting-advisory.php.html">Accounting Advisory Services</a>
+          
+        </div>
+      </div>
+
+      <a class="hover:text-primary" href="forms.php.html">Forms</a>
+      <a class="hover:text-primary" href="contact.php.html">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Mobile Drawer -->
+  <div id="navDrawer" class="hidden md:hidden px-4 py-4 bg-white rounded-xl shadow-md space-y-2" role="dialog" aria-modal="true">
+    <a class="block px-3 py-2 rounded-lg hover:bg-gray-100" href="index.html">Home</a>
+
+    <!-- About Dropdown -->
+    <details class="px-3 py-2 rounded-lg hover:bg-gray-100">
+      <summary class="cursor-pointer flex items-center justify-between">About <i class="fa fa-chevron-down text-xs ml-1"></i></summary>
+      <div class="ml-4 mt-2 space-y-2">
+        <a class="block hover:text-primary" href="about-us.php.html">About N. Gamadia &amp; Co.</a>
+        <a class="block hover:text-primary" href="why-ngc.php.html">Why NGC</a>
+        <a class="block hover:text-primary" href="management.php.html">Management</a>
+        <a class="block hover:text-primary" href="our-team.php.html">Our Team</a>
+      </div>
+    </details>
+
+    <a class="block px-3 py-2 rounded-lg hover:bg-gray-100" href="kpo.php.html">KPO</a>
+    <a class="block px-3 py-2 rounded-lg hover:bg-gray-100" href="gallery.php.html">Gallery</a>
+
+    <!-- Services Dropdown -->
+    <details class="px-3 py-2 rounded-lg hover:bg-gray-100">
+      <summary class="cursor-pointer flex items-center justify-between">Services <i class="fa fa-chevron-down text-xs ml-1"></i></summary>
+      <div class="ml-4 mt-2 space-y-2">
+        <a class="block hover:text-primary" href="audit-and-assurance.php.html">Audit & Assurance</a>
+        <a class="block hover:text-primary" href="taxation.php.html">Taxation</a>
+        <a class="block hover:text-primary" href="accounting-advisory.php.html">Accounting Advisory Services</a>
+      
+      </div>
+    </details>
+
+    <a class="block px-3 py-2 rounded-lg hover:bg-gray-100" href="forms.php.html">Forms</a>
+    <a class="block px-3 py-2 rounded-lg hover:bg-gray-100" href="contact.php.html">Contact</a>
+  </div>
+</header>
+
+<!-- Banner -->
+<section class="relative bg-cover bg-center h-[60vh]" style="background-image: url('../images/about-banner.jpg');">
+  <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-center px-4">
+    <div class="text-white max-w-xl mx-auto">
+      <h1 class="text-3xl md:text-4xl font-bold mb-4">Knowledge Process Outsourcing - CFO Services Company In India</h1>
+      <nav class="text-sm" aria-label="breadcrumb">
+        <ol class="flex justify-center space-x-2">
+          <li><a href="#" class="hover:underline text-white">Home</a></li>
+          <li>/</li>
+          <li><a href="#" class="hover:underline text-white">KPO</a></li>
+          <li>/</li>
+          <li class="font-semibold text-white">Knowledge Process Outsourcing</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<!-- Main Content -->
+<section class="max-w-4xl mx-auto p-6 my-10 bg-white rounded-lg shadow-lg">
+  <h2 class="text-2xl font-bold mb-4">Transfer Pricing Advisory Services in India</h2>
+  <p class="mb-4">Outsourcing is the process of delegating a company’s Non-Strategic – Non-Competitive business process to third parties or external agencies, leveraging benefits ranging from low-cost labor, improved quality, to product and service innovation. It is increasingly crucial for companies of all sizes to stay competitive. <a href="https://www.ngamadia.com.html" class="text-blue-600 hover:underline">N. Gamadia &amp; Co.</a> provides the best <b>Transfer Pricing Advisory Services in India</b>.</p>
+  
+  <h3 class="text-xl font-semibold mb-3 mt-8">Why India?</h3>
+  <p class="mb-4">India has numerous domain experts in accountancy. Tapping into this talent pool allows overseas companies to access superior quality <strong>QuickBooks KPO bookkeeping</strong> services at cost-effective prices, saving substantially. India’s time zone advantage enables solutions overnight. N. Gamadia &amp; Co. is among the best <b>CFO Services Companies in India</b>.</p>
+  
+  <h3 class="text-xl font-semibold mb-3 mt-8">Services we provide / Solution for your Business / Role of NGC</h3>
+  <ul class="list-disc list-inside mb-4 space-y-2 text-gray-700">
+    <li>Bookkeeping services - Bank reconciliation, Payments & Receipts, Journal Entries</li>
+    <li>Accounts payable Management - Purchase order processing & reconciliation</li>
+    <li>Accounts receivable Management - Revenue reconciliation, Cash allocation & aging reports</li>
+    <li>Payroll processing services - Process payroll, define liabilities, generate productivity reports</li>
+    <li>Cash flow management</li>
+    <li>Virtual CFO Services - Financial Planning, Reporting, Frameworks, Performance Analysis</li>
+  </ul>
+</section>
+
+<!-- Call to Action -->
+<section class="bg-cover bg-center p-12 text-center text-white" style="background-image: url('../images/cta-1.jpg');">
+  <div class="bg-black bg-opacity-50 p-8 rounded-lg max-w-xl mx-auto">
+    <h3 class="text-2xl md:text-3xl font-semibold mb-4">Do What You Do The Best, Outsource The Rest - Peter Drucker</h3>
+    <h3 class="text-2xl md:text-3xl font-semibold mb-6">And Let us do what we do the Best - NGC</h3>
+    <a href="contact.php.html" class="bg-white text-gray-800 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">Contact Us</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-300 py-8 mt-10">
+  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-8">
+    <div>
+      <h5 class="font-semibold mb-4">Get In Touch</h5>
+      <p>Address: 410, "SHAIL", Opp. Navrangpura Telephone Exchange, Nr. Madhusudan House, Off. C. G. Road, Ahmedabad-380006</p>
+      <p>Call US: (079) 26442206 / 30615664</p>
+      <p>Email US: <a href="mailto:info@ngamadia.com" class="hover:underline">info@ngamadia.com</a></p>
+    </div>
+    <div>
+      <h5 class="font-semibold mb-4">About</h5>
+      <ul class="space-y-2">
+        <li><a href="about-us.php.html" class="hover:underline">About N. Gamadia &amp; Co.</a></li>
+        <li><a href="why-ngc.php.html" class="hover:underline">Why NGC</a></li>
+        <li><a href="management.php.html" class="hover:underline">Management</a></li>
+        <li><a href="our-team.php.html" class="hover:underline">Our Team</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5 class="font-semibold mb-4">Navigate</h5>
+      <ul class="space-y-2">
+        <li><a href="forms.php.html" class="hover:underline">Forms</a></li>
+        <li><a href="kpo.php.html" class="hover:underline">KPO</a></li>
+        <li><a href="news-updates.php.html" class="hover:underline">News & Updates</a></li>
+        <li><a href="gallery.php.html" class="hover:underline">Gallery</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5 class="font-semibold mb-4">Newsletter</h5>
+      <p>Follow us & subscribe. No spam.</p>
+      <form class="flex" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+        <input type="email" class="flex-1 px-4 py-2 rounded-l-full border border-gray-400 focus:outline-none" placeholder="Subscribe Our Newsletter" required />
+        <button class="bg-blue-600 px-4 py-2 rounded-r-full text-white font-semibold hover:bg-blue-700 transition"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form>
+      <div class="mt-4 flex space-x-3 text-xl">
+        <a href="#" class="hover:text-blue-600"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-blue-600"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-blue-600"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="hover:text-blue-600"><i class="fab fa-google-plus-g"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="border-t border-gray-700 mt-8 pt-4 flex flex-col md:flex-row justify-between items-center text-sm">
+    <div>&copy; 2024 N. Gamadia & Co. | <a href="#" class="underline hover:text-white">Terms & Conditions</a></div>
+    <div><img src="../images/ngamadia-white.png" alt="N. Gamadia & Co." class="h-12 mt-2 md:mt-0" /></div>
+    <div>Designed by <a href="index.html" class="underline hover:text-white" target="_blank">City Business Group</a></div>
+  </div>
+</footer>
+
+<!-- Scripts for mobile menu toggle -->
+<script>
+  document.getElementById('navToggle').addEventListener('click', () => {
+    document.getElementById('navDrawer').classList.toggle('hidden');
+  });
+</script>
+
+</body>
+</html>

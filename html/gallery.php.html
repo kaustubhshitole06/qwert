@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Gallery - N. Gamadia & Co.</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- Custom Styles -->
+<style>
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Header Styles */
+  .header-top {
+    background-color: #1f2937;
+    padding: 8px 0;
+  }
+  .header-top ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  .header-top li {
+    display: flex;
+    align-items: center;
+    color: #ddd;
+    font-size: 0.9rem;
+  }
+  .header-top li i {
+    margin-right: 8px;
+  }
+
+  /* Navbar Styles */
+  nav.navbar {
+    background-color: rgba(255,255,255,0.95);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+  }
+  nav.navbar.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    z-index: 999;
+  }
+  .navbar-brand img {
+    height: 50px;
+  }
+  .nav-link {
+    font-weight: 600;
+    color: #222;
+  }
+  .nav-link:hover {
+    color: #007bff;
+  }
+
+  /* Banner */
+  #banner {
+    height: 60vh;
+    background-image: url('../images/about-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,0.4);
+  }
+  #banner .content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+  }
+  #banner h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  .breadcrumb {
+    justify-content: center;
+    background: transparent;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  /* Gallery Styles */
+  .gallery-section {
+    padding: 50px 20px;
+    background-color: #fff;
+  }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+  }
+  .gallery-grid img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  .gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+
+  /* Footer Styles */
+  footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 40px 20px;
+  }
+  footer h5 {
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  footer a {
+    color: #ccc;
+    text-decoration: none;
+  }
+  footer a:hover {
+    color: #fff;
+  }
+  .footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .footer-column {
+    flex: 1 1 200px;
+  }
+  .social-icons a {
+    color: #ccc;
+    margin-right: 15px;
+    font-size: 1.2rem;
+  }
+  .social-icons a:hover {
+    color: #fff;
+  }
+  /* Newsletter */
+  .newsletter-input {
+    border-radius: 30px;
+    border: none;
+    padding: 0.75rem 1rem;
+    width: calc(100% - 50px);
+  }
+  .newsletter-btn {
+    background-color: #007bff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+  }
+  /* Responsive adjustments */
+  @media(max-width: 768px){
+    #banner h1 {
+      font-size: 2rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- Top Header -->
+<div class="header-top">
+  <div class="container d-flex justify-content-between align-items-center">
+    <ul class="mb-0">
+      <li><i class="fa fa-map-marker"></i> Ahmedabad, Gujarat, India</li>
+      <li><i class="fa fa-envelope"></i> info@ngamadia.com</li>
+      <li><i class="fa fa-phone"></i> +91 98252 05794</li>
+    </ul>
+    <div class="d-none d-md-flex">
+      <a href="#" target="_blank" class="mx-2"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank" class="mx-2"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light transition">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="../images/ngamadia.png" alt="N. Gamadia & Co." />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="about-us.php.html">About N. Gamadia & Co.</a></li>
+            <li><a class="dropdown-item" href="why-ngc.php.html">Why NGC</a></li>
+            <li><a class="dropdown-item" href="managment.php.html">Management</a></li>
+            <li><a class="dropdown-item" href="our-team.php.html">Our Team</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="kpo.php.html">KPO</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.php.html">Gallery</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="audit-and-assurance.php.html">Audit & Assurance</a></li>
+            <li><a class="dropdown-item" href="taxation.php.html">Taxation</a></li>
+            <li><a class="dropdown-item" href="accounting-advisory.php.html">Accounting Advisory Services</a></li>
+            
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="forms.php.html">Forms</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.php.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- WhatsApp Button -->
+<a href="send.html" target="_blank" class="position-fixed bottom-0 end-0 m-4" style="z-index:999;">
+  <div class="d-flex align-items-center bg-success p-3 rounded-circle shadow-lg">
+    <img src="../images/whatsapp.png" alt="WhatsApp" width="50" height="50" />
+  </div>
+</a>
+
+<!-- Banner / Page Title -->
+<section id="banner" class="d-flex align-items-center justify-content-center text-center">
+  <div class="content">
+    <h1>Gallery</h1>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb justify-content-center mb-0">
+        <li class="breadcrumb-item"><a href="." class="text-white">Home</a></li>
+        <li class="breadcrumb-item active text-white" aria-current="page">Gallery</li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section class="gallery-section">
+  <div class="container">
+    <div class="gallery-grid">
+      <!-- Replace with your images -->
+      <img src="../images/_MG_0630.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0631.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0651.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0662.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0682.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0685.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0677.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0634.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0657.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0678.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0683.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0687.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0734.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0636.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0664.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0675.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0775.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0689.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0730.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0639.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0671.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0773.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0771.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0691.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0693.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0701.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0710.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0722.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0695.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0704.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0716.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0723.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0697.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0706.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0718.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0770.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0699.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0708.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0720.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0713.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0747.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0748.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0749.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0750.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0763.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0764.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0751.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0752.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0753.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0754.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0765.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0766.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0755.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0756.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0757.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0758.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0767.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0768.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0759.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0760.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0761.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0762.JPG" alt="Gallery Image" />
+      <img src="../images/_MG_0769.JPG" alt="Gallery Image" />
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="mt-5">
+  <div class="container">
+    <div class="row">
+      <!-- Get In Touch -->
+      <div class="col-md-3 mb-4">
+        <h5>Get In Touch</h5>
+        <ul class="list-unstyled">
+          <li><strong>Address:</strong> 410, "SHAIL", Opp. Navrangpura Telephone Exchange, Nr. Madhusudan House, Off. C. G. Road, Ahmedabad-380006</li>
+          <li><strong>Call US:</strong> (079) 26442206 / 30615664</li>
+          <li><strong>Email US:</strong> <a href="mailto:info@ngamadia.com" class="text-decoration-none">info@ngamadia.com</a></li>
+        </ul>
+      </div>
+      <!-- About -->
+      <div class="col-md-3 mb-4">
+        <h5>About</h5>
+        <ul class="list-unstyled">
+          <li><a href="about-us.php.html" class="text-light">About N. Gamadia & Co.</a></li>
+          <li><a href="why-ngc.php.html" class="text-light">Why NGC</a></li>
+          <li><a href="managment.php.html" class="text-light">Management</a></li>
+          <li><a href="our-team.php.html" class="text-light">Our Team</a></li>
+        </ul>
+      </div>
+      <!-- Navigation -->
+      <div class="col-md-3 mb-4">
+        <h5>Navigation</h5>
+        <ul class="list-unstyled">
+          <li><a href="forms.php.html" class="text-light">Forms</a></li>
+          <li><a href="kpo.php.html" class="text-light">KPO</a></li>
+          <li><a href="news-updates.php.html" class="text-light">News & Updates</a></li>
+          <li><a href="gallery.php.html" class="text-light">Gallery</a></li>
+        </ul>
+      </div>
+      <!-- Newsletter -->
+      <div class="col-md-3 mb-4">
+        <h5>Newsletter</h5>
+        <p class="small">Don’t miss to follow us & subscribe to our feeds. No spam ever.</p>
+        <form class="d-flex" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+          <input type="email" class="form-control newsletter-input" placeholder="Subscribe Our Newsletter" required />
+          <button type="submit" class="newsletter-btn"><i class="fa fa-long-arrow-right"></i></button>
+        </form>
+        <div class="mt-3 d-flex gap-3 social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-google-plus-g"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <hr class="border-light my-4" />
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <small>&copy; 2024 N. Gamadia & Co. | <a href="#" class="text-decoration-underline text-light">Terms & Conditions</a></small>
+      <img src="../images/ngamadia-white.png" alt="N. Gamadia & Co." style="height:50px; margin-top:10px;" />
+      <small class="mt-2 mt-md-0">Design by <a href="index.html" target="_blank" class="text-decoration-underline text-light">City Business Group</a></small>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Sticky Header Script -->
+<script>
+  window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('nav.navbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('sticky');
+    } else {
+      navbar.classList.remove('sticky');
+    }
+  });
+</script>
+
+</body>
+</html>

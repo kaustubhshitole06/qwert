@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Team | N. Gamadia & Co., Ahmedabad</title>
+  
+  <!-- SEO Meta -->
+  <meta name="description" content="Meet our dedicated team of Chartered Accountants and professionals at N. Gamadia & Co., Ahmedabad." />
+  <meta property="og:title" content="Our Team | N. Gamadia & Co." />
+  <meta property="og:description" content="Leading Chartered Accountants in Ahmedabad with a dedicated team of professionals." />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome CDN -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1e40af', // Blue color for primary elements
+            'primary-dark': '#1e3a8a', // Darker blue for hover states
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans bg-gray-100 text-gray-700">
+
+  <!-- Top Bar -->
+  <div class="bg-gray-900 text-gray-100 text-sm">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center py-2">
+      <ul class="flex space-x-6">
+        <li class="flex items-center space-x-2"><i class="fas fa-map-marker-alt"></i> <span>Ahmedabad, Gujarat, India</span></li>
+        <li class="flex items-center space-x-2"><i class="fas fa-envelope"></i> <span>info@ngamadia.com</span></li>
+        <li class="flex items-center space-x-2"><i class="fas fa-phone"></i> <span>+91 98252 05794</span></li>
+      </ul>
+      <div class="hidden md:flex space-x-4">
+        <a href="#" class="hover:text-primary" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-primary" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-primary" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+   <!-- Header & Navigation -->
+<header class="sticky top-0 backdrop-blur bg-white/80 shadow-md z-50">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-3 flex items-center justify-between">
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="../images/ngamadia.png" alt="N. Gamadia & Co." class="h-10 w-auto" />
+      <div class="font-semibold text-xl text-primary">N. Gamadia &amp; Co.</div>
+    </a>
+
+    <!-- Mobile menu button -->
+    <button id="navToggle" class="md:hidden p-2 rounded-full border border-gray-300 hover:bg-gray-100" aria-label="Menu">
+      <i class="fa fa-bars"></i>
+    </button>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
+      <a class="hover:text-primary" href="index.html">Home</a>
+
+      <!-- About Dropdown -->
+      <div class="relative group">
+        <button class="flex items-center hover:text-primary focus:outline-none">
+          About <i class="fa fa-chevron-down text-xs ml-1"></i>
+        </button>
+        <div class="absolute left-0 hidden group-hover:block bg-white rounded-xl shadow-md ring-1 ring-gray-200 p-4 w-64 z-50">
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="about-us.php.html">About N. Gamadia &amp; Co.</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="why-ngc.php.html">Why NGC</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="management.php.html">Management</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="our-team.php.html">Our Team</a>
+        </div>
+      </div>
+
+      <a class="hover:text-primary" href="kpo.php.html">KPO</a>
+      <a class="hover:text-primary" href="gallery.php.html">Gallery</a>
+
+      <!-- Services Dropdown -->
+      <div class="relative group">
+        <button class="flex items-center hover:text-primary focus:outline-none">
+          Services <i class="fa fa-chevron-down text-xs ml-1"></i>
+        </button>
+        <div class="absolute left-0 hidden group-hover:block bg-white rounded-xl shadow-md ring-1 ring-gray-200 p-4 w-72 z-50">
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="audit-and-assurance.php.html">Audit & Assurance</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="taxation.php.html">Taxation</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="accounting-advisory.php.html">Accounting Advisory Services</a>
+          
+        </div>
+      </div>
+
+      <a class="hover:text-primary" href="forms.php.html">Forms</a>
+      <a class="hover:text-primary" href="contact.php.html">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Mobile Drawer -->
+  <div id="navDrawer" class="hidden md:hidden px-4 py-4 bg-white rounded-xl shadow-md space-y-2" role="dialog" aria-modal="true">
+    <a class="block px-3 py-2 rounded-lg hover:bg-gray-100" href="index.html">Home</a>
+
+    <!-- About Dropdown -->
+    <details class="px-3 py-2 rounded-lg hover:bg-gray-100">
+      <summary class="cursor-pointer flex items-center justify-between">About <i class="fa fa-chevron-down text-xs ml-1"></i></summary>
+      <div class="ml-4 mt-2 space-y-2">
+        <a class="block hover:text-primary" href="about-us.php.html">About N. Gamadia &amp; Co.</a>
+        <a class="block hover:text-primary" href="why-ngc.php.html">Why NGC</a>
+        <a class="block hover:text-primary" href="management.php.html">Management</a>
+        <a class="block hover:text-primary" href="our-team.php.html">Our Team</a>
+      </div>
+    </details>
+
+    <a class="block px-3 py-2 rounded-lg hover:bg-gray-100" href="kpo.php.html">KPO</a>
+    <a class="block px-3 py-2 rounded-lg hover:bg-gray-100" href="gallery.php.html">Gallery</a>
+
+    <!-- Services Dropdown -->
+    <details class="px-3 py-2 rounded-lg hover:bg-gray-100">
+      <summary class="cursor-pointer flex items-center justify-between">Services <i class="fa fa-chevron-down text-xs ml-1"></i></summary>
+      <div class="ml-4 mt-2 space-y-2">
+        <a class="block hover:text-primary" href="audit-and-assurance.php.html">Audit & Assurance</a>
+        <a class="block hover:text-primary" href="taxation.php.html">Taxation</a>
+        <a class="block hover:text-primary" href="accounting-advisory.php.html">Accounting Advisory Services</a>
+      
+      </div>
+    </details>
+
+    <a class="block px-3 py-2 rounded-lg hover:bg-gray-100" href="forms.php.html">Forms</a>
+    <a class="block px-3 py-2 rounded-lg hover:bg-gray-100" href="contact.php.html">Contact</a>
+  </div>
+</header>
+
+
+  <!-- Hero Banner -->
+  <section class="relative bg-cover bg-center h-96" style="background-image: url('../images/about-banner.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center px-4 py-20 text-white">
+      <div class="max-w-3xl text-left">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Team</h1>
+        <p class="mb-6 text-lg md:text-xl">Meet our dedicated team of Chartered Accountants and professionals committed to delivering exceptional financial services.</p>
+        <a href="contact.php" class="inline-block px-6 py-3 bg-primary text-white rounded-xl font-semibold hover:bg-primary-dark transition">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-4 py-12 space-y-12">
+
+    <!-- Section: About Our Team -->
+    <section class="bg-white p-8 rounded-lg shadow-md">
+      <h2 class="text-3xl font-bold mb-4 text-gray-800">Our Team</h2>
+      <p class="mb-4 text-gray-600" align="justify">
+        Our team comprises highly qualified Chartered Accountants and professionals with diverse expertise across various domains of accounting, taxation, and compliance.
+      </p>
+      <p class="mb-4 text-gray-600" align="justify">
+        Each team member brings unique skills and experience to provide comprehensive financial solutions tailored to our clients' specific needs.
+      </p>
+      <p class="mb-4 text-gray-600" align="justify">
+        We work collaboratively to ensure that our clients receive the highest quality service and achieve their financial goals.
+      </p>
+      <p class="mb-4 text-gray-600" align="justify">
+        Our commitment to excellence and continuous learning keeps us at the forefront of the industry.
+      </p>
+      <p class="mb-4 text-gray-600" align="justify">
+        Together, we form a cohesive unit dedicated to delivering exceptional value to our clients.
+      </p>
+    </section>
+
+    <!-- Team Profiles -->
+    <section class="grid md:grid-cols-3 gap-8">
+      <!-- Team Member 1 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <div class="w-full h-80 flex items-center justify-center overflow-hidden rounded mb-4 bg-gray-200">
+          <img src="../images/_MG_0672.JPG" alt="CA Zeal Bangdiwala" class="max-w-full max-h-full object-contain" />
+        </div>
+        <h3 class="text-xl font-semibold mb-2">CA Zeal Bangdiwala</h3>
+        <h4 class="mb-3">ACA, B. COM</h4>
+        <p>Expertise in Direct Tax, International Taxation, FEMA, RBI Compliances, and KPO Services.</p>
+      </div>
+
+      <!-- Team Member 2 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <div class="w-full h-80 flex items-center justify-center overflow-hidden rounded mb-4 bg-gray-200">
+          <img src="../images/_MG_0675.JPG" alt="CA Parth Shah" class="max-w-full max-h-full object-contain" />
+        </div>
+        <h3 class="text-xl font-semibold mb-2">CA Parth Shah</h3>
+        <h4 class="mb-3">ACA, B. COM</h4>
+        <p>Specialized in taxation and compliance services with a focus on corporate clients.</p>
+      </div>
+
+      <!-- Team Member 3 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <div class="w-full h-80 flex items-center justify-center overflow-hidden rounded mb-4 bg-gray-200">
+          <img src="../images/_MG_0687.JPG" alt="CA Khushbu Premlani" class="max-w-full max-h-full object-contain" />
+        </div>
+        <h3 class="text-xl font-semibold mb-2">CA Khushbu Premlani</h3>
+        <h4 class="mb-3">ACA, B.COM</h4>
+        <p>Expert in financial accounting and advisory services for diverse business sectors.</p>
+      </div>
+
+      <!-- Team Member 4 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <div class="w-full h-80 flex items-center justify-center overflow-hidden rounded mb-4 bg-gray-200">
+          <img src="../images/_MG_0685.JPG" alt="CA Viral Panchal" class="max-w-full max-h-full object-contain" />
+        </div>
+        <h3 class="text-xl font-semibold mb-2">CA Viral Panchal</h3>
+        <h4 class="mb-3">ACA</h4>
+        <p>Specialized in audit and assurance services with extensive industry experience.</p>
+      </div>
+
+      <!-- Team Member 5 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <div class="w-full h-80 flex items-center justify-center overflow-hidden rounded mb-4 bg-gray-200">
+          <img src="../images/_MG_0682.JPG" alt="CMA Amruta Mehta" class="max-w-full max-h-full object-contain" />
+        </div>
+        <h3 class="text-xl font-semibold mb-2">CMA Amruta Mehta</h3>
+        <h4 class="mb-3">ICWA, B.COM</h4>
+        <p>Expert in cost management and financial planning for manufacturing and service industries.</p>
+      </div>
+
+      <!-- Team Member 6 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <div class="w-full h-80 flex items-center justify-center overflow-hidden rounded mb-4 bg-gray-200">
+          <img src="../images/_MG_0683.JPG" alt="CMA Kajal Mehta" class="max-w-full max-h-full object-contain" />
+        </div>
+        <h3 class="text-xl font-semibold mb-2">CMA Kajal Mehta</h3>
+        <h4 class="mb-3">ICWA</h4>
+        <p>Specialized in management accounting and strategic financial advisory services.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-200 py-8 mt-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8 mb-6">
+        <!-- Get In Touch -->
+        <div>
+          <h5 class="text-xl font-semibold mb-4">Get In Touch</h5>
+          <ul class="space-y-2 text-sm">
+            <li><strong>Address:</strong> 410, "SHAIL", Opp. Navrangpura Telephone Exchange, Nr. Madhusudan House, Off. C. G. Road, Ahmedabad-380006</li>
+            <li><strong>Call Us:</strong> (079) 26442206 / 30615664</li>
+            <li><strong>Email:</strong> <a href="mailto:info@ngamadia.com" class="hover:underline">info@ngamadia.com</a></li>
+          </ul>
+        </div>
+        <!-- About Links -->
+        <div>
+          <h5 class="text-xl font-semibold mb-4">About</h5>
+          <ul class="space-y-2 text-sm">
+            <li><a href="about-us.php" class="hover:text-primary transition">About N. Gamadia &amp; Co.</a></li>
+            <li><a href="why-ngc.php" class="hover:text-primary transition">Why NGC</a></li>
+            <li><a href="management.php" class="hover:text-primary transition">Management</a></li>
+            <li><a href="our-team.php" class="hover:text-primary transition">Our Team</a></li>
+          </ul>
+        </div>
+        <!-- Resources -->
+        <div>
+          <h5 class="text-xl font-semibold mb-4">Resources</h5>
+          <ul class="space-y-2 text-sm">
+            <li><a href="forms.php" class="hover:text-primary transition">Forms</a></li>
+            <li><a href="kpo.php" class="hover:text-primary transition">KPO</a></li>
+            <li><a href="news-updates.php" class="hover:text-primary transition">News & Updates</a></li>
+            <li><a href="gallery.php" class="hover:text-primary transition">Gallery</a></li>
+          </ul>
+        </div>
+        <!-- Newsletter -->
+        <div>
+          <h5 class="text-xl font-semibold mb-4">Newsletter</h5>
+          <p class="mb-2 text-sm">Subscribe for updates. No spam, ever.</p>
+          <form class="flex space-x-2" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+            <input type="email" placeholder="Your Email" required class="flex-1 px-3 py-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary bg-gray-800 text-white" />
+            <button type="submit" class="px-4 py-2 bg-primary rounded-xl hover:bg-primary-dark transition">
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </button>
+          </form>
+          <div class="mt-4 flex space-x-4 text-xl justify-center md:justify-start">
+            <a href="#" class="hover:text-primary"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="hover:text-primary"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="hover:text-primary"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="hover:text-primary"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Bottom bar -->
+      <div class="border-t border-gray-700 pt-4 flex flex-col md:flex-row items-center justify-between text-sm">
+        <div>&copy; 2024 N. Gamadia &amp; Co. | <a href="#" class="hover:underline hover:text-primary">Terms & Conditions</a></div>
+        <img src="../images/ngamadia-white.png" alt="N. Gamadia & Co." class="h-12 opacity-80 my-4 md:my-0" />
+        <div>Designed by <a href="index.html" target="_blank" class="hover:underline hover:text-primary">City Business Group</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script for mobile menu toggle -->
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

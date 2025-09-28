@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Services | N. Gamadia & Co., Ahmedabad</title>
+  
+  <!-- SEO Meta -->
+  <meta name="description" content="Comprehensive financial and business advisory services by N. Gamadia & Co., Chartered Accountants in Ahmedabad." />
+  <meta property="og:title" content="Our Services | N. Gamadia & Co." />
+  <meta property="og:description" content="Expert audit, taxation, accounting, and business advisory services for individuals and businesses." />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome CDN -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1e40af', // Blue color for primary elements
+            'primary-dark': '#1e3a8a', // Darker blue for hover states
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    .gradient-bg {
+      background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+    }
+    
+    .gradient-bg-green {
+      background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+    }
+    
+    .gradient-bg-gold {
+      background: linear-gradient(135deg, #d97706 0%, #f59e0b 100%);
+    }
+    
+    .gradient-bg-purple {
+      background: linear-gradient(135deg, #7c3aed 0%, #a78bfa 100%);
+    }
+    
+    .hover-lift {
+      transition: all 0.3s ease;
+    }
+    
+    .hover-lift:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    
+    .service-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 2rem;
+    }
+    
+    .service-category {
+      transition: all 0.3s ease;
+    }
+    
+    .service-category:hover {
+      transform: translateY(-3px);
+    }
+    
+    .tab-content {
+      display: none;
+    }
+    
+    .tab-content.active {
+      display: block;
+      animation: fadeIn 0.5s ease;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body class="font-sans bg-gray-100 text-gray-700">
+
+  <!-- Top Bar -->
+  <div class="bg-gray-900 text-gray-100 text-sm">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center py-2">
+      <ul class="flex space-x-6">
+        <li class="flex items-center space-x-2"><i class="fas fa-map-marker-alt"></i> <span>Ahmedabad, Gujarat, India</span></li>
+        <li class="flex items-center space-x-2"><i class="fas fa-envelope"></i> <span>info@ngamadia.com</span></li>
+        <li class="flex items-center space-x-2"><i class="fas fa-phone"></i> <span>+91 98252 05794</span></li>
+      </ul>
+      <div class="hidden md:flex space-x-4">
+        <a href="#" class="hover:text-primary" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-primary" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-primary" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+   <!-- Header & Navigation -->
+<header class="sticky top-0 backdrop-blur bg-white/80 shadow-md z-50">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-3 flex items-center justify-between">
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="../images/ngamadia.png" alt="N. Gamadia & Co." class="h-10 w-auto" />
+      <div class="font-semibold text-xl text-primary">N. Gamadia &amp; Co.</div>
+    </a>
+
+    <!-- Mobile menu button -->
+    <button id="navToggle" class="md:hidden p-2 rounded-full border border-gray-300 hover:bg-gray-100" aria-label="Menu">
+      <i class="fa fa-bars"></i>
+    </button>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
+      <a class="hover:text-primary" href="index.html">Home</a>
+
+      <!-- About Dropdown -->
+      <div class="relative group">
+        <button class="flex items-center hover:text-primary focus:outline-none">
+          About <i class="fa fa-chevron-down text-xs ml-1"></i>
+        </button>
+        <div class="absolute left-0 hidden group-hover:block bg-white rounded-xl shadow-md ring-1 ring-gray-200 p-4 w-64 z-50">
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="about-us.php.html">About N. Gamadia &amp; Co.</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="why-ngc.php.html">Why NGC</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="management.php.html">Management</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="our-team.php.html">Our Team</a>
+        </div>
+      </div>
+
+      <a class="hover:text-primary" href="kpo.php.html">KPO</a>
+      <a class="hover:text-primary" href="gallery.php.html">Gallery</a>
+
+      <!-- Services Dropdown -->
+      <div class="relative group">
+        <button class="flex items-center hover:text-primary focus:outline-none">
+          Services <i class="fa fa-chevron-down text-xs ml-1"></i>
+        </button>
+        <div class="absolute left-0 hidden group-hover:block bg-white rounded-xl shadow-md ring-1 ring-gray-200 p-4 w-72 z-50">
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="audit-and-assurance.php.html">Audit & Assurance</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="taxation.php.html">Taxation</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="accounting-advisory.php.html">Accounting Advisory Services</a>
+          
+        </div>
+      </div>
+
+      <a class="hover:text-primary" href="forms.php.html">Forms</a>
+      <a class="hover:text-primary" href="contact.php.html">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Mobile Drawer -->
+  <div id="navDrawer" class="hidden md:hidden px-4 py-4 bg-white rounded-xl shadow-md space-y-2" role="dialog" aria-modal="true">
+    <a class="block px-3 py-2 rounded-lg hover:bg-gray-100" href="index.html">Home</a>
+
+    <!-- About Dropdown -->
+    <details class="px-3 py-2 rounded-lg hover:bg-gray-100">
+      <summary class="cursor-pointer flex items-center justify-between">About <i class="fa fa-chevron-down text-xs ml-1"></i></summary>
+      <div class="ml-4 mt-2 space-y-2">
+        <a class="block hover:text-primary" href="about-us.php.html">About N. Gamadia &amp; Co.</a>
+        <a class="block hover:text-primary" href="why-ngc.php.html">Why NGC</a>
+        <a class="block hover:text-primary" href="management.php.html">Management</a>
+        <a class="block hover:text-primary" href="our-team.php.html">Our Team</a>
+      </div>
+    </details>
+
+    <a class="block px-3 py-2 rounded-lg hover:bg-gray-100" href="kpo.php.html">KPO</a>
+    <a class="block px-3 py-2 rounded-lg hover:bg-gray-100" href="gallery.php.html">Gallery</a>
+
+    <!-- Services Dropdown -->
+    <details class="px-3 py-2 rounded-lg hover:bg-gray-100">
+      <summary class="cursor-pointer flex items-center justify-between">Services <i class="fa fa-chevron-down text-xs ml-1"></i></summary>
+      <div class="ml-4 mt-2 space-y-2">
+        <a class="block hover:text-primary" href="audit-and-assurance.php.html">Audit & Assurance</a>
+        <a class="block hover:text-primary" href="taxation.php.html">Taxation</a>
+        <a class="block hover:text-primary" href="accounting-advisory.php.html">Accounting Advisory Services</a>
+      
+      </div>
+    </details>
+
+    <a class="block px-3 py-2 rounded-lg hover:bg-gray-100" href="forms.php.html">Forms</a>
+    <a class="block px-3 py-2 rounded-lg hover:bg-gray-100" href="contact.php.html">Contact</a>
+  </div>
+</header>
+
+  <!-- Hero Banner -->
+  <section class="relative bg-cover bg-center h-96" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(30,64,175,0.7)), url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+    <div class="absolute inset-0 flex items-center justify-center px-4 py-20 text-white">
+      <div class="max-w-3xl text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
+        <p class="mb-6 text-lg md:text-xl">Comprehensive financial and business advisory services tailored to meet your unique needs and goals.</p>
+        <a href="#services-section" class="inline-block px-6 py-3 bg-primary text-white rounded-xl font-semibold hover:bg-primary-dark transition hover-lift">Explore Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-4 py-12 space-y-12">
+
+    <!-- Introduction Section -->
+    <section class="bg-white p-8 rounded-lg shadow-md text-center">
+      <h2 class="text-3xl font-bold mb-4 text-gray-800">Comprehensive Financial Solutions</h2>
+      <p class="mb-4 text-gray-600 max-w-3xl mx-auto">
+        At N. Gamadia & Co., we offer a wide range of professional services designed to help individuals and businesses navigate complex financial landscapes. Our team of experienced Chartered Accountants provides expert guidance tailored to your specific needs.
+      </p>
+    </section>
+
+    <!-- Services Tabs Navigation -->
+    <section class="bg-white p-6 rounded-lg shadow-md">
+      <div class="flex flex-wrap justify-center gap-4 mb-6">
+        <button class="tab-btn px-4 py-2 bg-primary text-white rounded-lg font-semibold transition active" data-tab="audit">Audit & Assurance</button>
+        <button class="tab-btn px-4 py-2 bg-gray-200 text-gray-700 rounded-lg font-semibold transition hover:bg-gray-300" data-tab="taxation">Taxation</button>
+        <button class="tab-btn px-4 py-2 bg-gray-200 text-gray-700 rounded-lg font-semibold transition hover:bg-gray-300" data-tab="accounting">Accounting</button>
+        <button class="tab-btn px-4 py-2 bg-gray-200 text-gray-700 rounded-lg font-semibold transition hover:bg-gray-300" data-tab="advisory">Business Advisory</button>
+        <button class="tab-btn px-4 py-2 bg-gray-200 text-gray-700 rounded-lg font-semibold transition hover:bg-gray-300" data-tab="compliance">Compliance</button>
+        <button class="tab-btn px-4 py-2 bg-gray-200 text-gray-700 rounded-lg font-semibold transition hover:bg-gray-300" data-tab="kpo">KPO Services</button>
+      </div>
+
+      <!-- Audit & Assurance Services -->
+      <div id="audit" class="tab-content active">
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <div class="service-icon gradient-bg text-white">
+              <i class="fas fa-search"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-center text-gray-800">Statutory Audit</h3>
+            <p class="text-gray-600 text-center mb-4">Comprehensive audit of financial statements as per Companies Act requirements.</p>
+            <ul class="space-y-2">
+              <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Company financial statement audits</li>
+              <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Compliance with accounting standards</li>
+              <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Audit reporting and certification</li>
+              <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Internal control evaluation</li>
+            </ul>
+          </div>
+          
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <div class="service-icon gradient-bg-green text-white">
+              <i class="fas fa-clipboard-check"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-center text-gray-800">Internal Audit</h3>
+            <p class="text-gray-600 text-center mb-4">Independent appraisal of internal controls and operational efficiency.</p>
+            <ul class="space-y-2">
+              <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Risk assessment and management</li>
+              <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Process improvement recommendations</li>
+              <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Fraud detection and prevention</li>
+              <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Compliance with internal policies</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Taxation Services -->
+      <div id="taxation" class="tab-content">
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <div class="service-icon gradient-bg-gold text-white">
+              <i class="fas fa-file-invoice-dollar"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-center text-gray-800">Direct Taxation</h3>
+            <p class="text-gray-600 text-center mb-4">Comprehensive income tax planning and compliance services.</p>
+            <ul class="space-y-2">
+              <li class="flex items-center"><i class="fas fa-check text-yellow-600 mr-2"></i> Income tax return filing</li>
+              <li class="flex items-center"><i class="fas fa-check text-yellow-600 mr-2"></i> Tax planning and advisory</li>
+              <li class="flex items-center"><i class="fas fa-check text-yellow-600 mr-2"></i> Tax assessment representation</li>
+              <li class="flex items-center"><i class="fas fa-check text-yellow-600 mr-2"></i> International taxation</li>
+            </ul>
+          </div>
+          
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <div class="service-icon gradient-bg-purple text-white">
+              <i class="fas fa-receipt"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-center text-gray-800">GST Services</h3>
+            <p class="text-gray-600 text-center mb-4">End-to-end GST compliance and advisory services.</p>
+            <ul class="space-y-2">
+              <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-2"></i> GST registration and migration</li>
+              <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-2"></i> Monthly/quarterly return filing</li>
+              <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-2"></i> GST audit and assessment</li>
+              <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-2"></i> Refund and litigation support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accounting Services -->
+      <div id="accounting" class="tab-content">
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <div class="service-icon gradient-bg text-white">
+              <i class="fas fa-calculator"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-center text-gray-800">Bookkeeping</h3>
+            <p class="text-gray-600 text-center mb-4">Accurate maintenance of financial records and transactions.</p>
+            <ul class="space-y-2">
+              <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Day-to-day transaction recording</li>
+              <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Accounts payable/receivable management</li>
+              <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Bank reconciliation</li>
+              <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Financial statement preparation</li>
+            </ul>
+          </div>
+          
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <div class="service-icon gradient-bg-green text-white">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-center text-gray-800">Financial Reporting</h3>
+            <p class="text-gray-600 text-center mb-4">Preparation of accurate and timely financial statements.</p>
+            <ul class="space-y-2">
+              <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Balance sheet preparation</li>
+              <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Profit and loss statements</li>
+              <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Cash flow statements</li>
+              <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Management information systems</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Business Advisory Services -->
+      <div id="advisory" class="tab-content">
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <div class="service-icon gradient-bg-gold text-white">
+              <i class="fas fa-hand-holding-usd"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-center text-gray-800">Business Valuation</h3>
+            <p class="text-gray-600 text-center mb-4">Comprehensive business valuation services for various purposes.</p>
+            <ul class="space-y-2">
+              <li class="flex items-center"><i class="fas fa-check text-yellow-600 mr-2"></i> Mergers and acquisitions</li>
+              <li class="flex items-center"><i class="fas fa-check text-yellow-600 mr-2"></i> Shareholder disputes</li>
+              <li class="flex items-center"><i class="fas fa-check text-yellow-600 mr-2"></i> Financial reporting</li>
+              <li class="flex items-center"><i class="fas fa-check text-yellow-600 mr-2"></i> Tax and regulatory compliance</li>
+            </ul>
+          </div>
+          
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <div class="service-icon gradient-bg-purple text-white">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-center text-gray-800">Transaction Advisory</h3>
+            <p class="text-gray-600 text-center mb-4">Expert guidance for business transactions and deals.</p>
+            <ul class="space-y-2">
+              <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-2"></i> Due diligence services</li>
+              <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-2"></i> Deal structuring and negotiation</li>
+              <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-2"></i> Post-merger integration</li>
+              <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-2"></i> Transaction documentation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Compliance Services -->
+      <div id="compliance" class="tab-content">
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <div class="service-icon gradient-bg text-white">
+              <i class="fas fa-balance-scale"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-center text-gray-800">Company Law Compliance</h3>
+            <p class="text-gray-600 text-center mb-4">Ensuring compliance with Companies Act requirements.</p>
+            <ul class="space-y-2">
+              <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Annual filing with ROC</li>
+              <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Board and general meetings</li>
+              <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Corporate governance advisory</li>
+              <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Secretarial audit</li>
+            </ul>
+          </div>
+          
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <div class="service-icon gradient-bg-green text-white">
+              <i class="fas fa-passport"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-center text-gray-800">FEMA & RBI Compliance</h3>
+            <p class="text-gray-600 text-center mb-4">Guidance on foreign exchange regulations and compliance.</p>
+            <ul class="space-y-2">
+              <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Foreign investment advisory</li>
+              <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Overseas investment compliance</li>
+              <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> ECB and trade finance</li>
+              <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Liaison with RBI and AD banks</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPO Services -->
+      <div id="kpo" class="tab-content">
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <div class="service-icon gradient-bg-gold text-white">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-center text-gray-800">Accounting KPO</h3>
+            <p class="text-gray-600 text-center mb-4">Outsourced accounting and bookkeeping services.</p>
+            <ul class="space-y-2">
+              <li class="flex items-center"><i class="fas fa-check text-yellow-600 mr-2"></i> Accounts payable processing</li>
+              <li class="flex items-center"><i class="fas fa-check text-yellow-600 mr-2"></i> Accounts receivable management</li>
+              <li class="flex items-center"><i class="fas fa-check text-yellow-600 mr-2"></i> Payroll processing</li>
+              <li class="flex items-center"><i class="fas fa-check text-yellow-600 mr-2"></i> Financial reporting</li>
+            </ul>
+          </div>
+          
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <div class="service-icon gradient-bg-purple text-white">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-center text-gray-800">Financial Analysis KPO</h3>
+            <p class="text-gray-600 text-center mb-4">In-depth financial analysis and reporting services.</p>
+            <ul class="space-y-2">
+              <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-2"></i> Financial modeling</li>
+              <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-2"></i> Budgeting and forecasting</li>
+              <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-2"></i> Management reporting</li>
+              <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-2"></i> Data analysis and insights</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Our Services Section -->
+    <section class="bg-gradient-to-r from-primary to-primary-dark text-white p-8 rounded-2xl">
+      <h2 class="text-3xl font-bold mb-6 text-center">Why Choose Our Services?</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-primary mx-auto mb-4">
+            <i class="fas fa-user-tie text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Expert Team</h3>
+          <p>Qualified professionals with extensive industry experience</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-primary mx-auto mb-4">
+            <i class="fas fa-clock text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Timely Delivery</h3>
+          <p>Commitment to meeting deadlines and client expectations</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-primary mx-auto mb-4">
+            <i class="fas fa-shield-alt text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Quality Assurance</h3>
+          <p>Rigorous quality checks for accurate and reliable services</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-white p-8 rounded-lg shadow-md text-center">
+      <h2 class="text-3xl font-bold mb-4 text-gray-800">Ready to Get Started?</h2>
+      <p class="mb-6 text-gray-600 max-w-2xl mx-auto">
+        Contact us today to discuss how our services can help your business thrive. We offer personalized solutions tailored to your specific needs.
+      </p>
+      <a href="contact.php" class="inline-block px-6 py-3 bg-primary text-white rounded-xl font-semibold hover:bg-primary-dark transition">Get In Touch</a>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-200 py-8 mt-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8 mb-6">
+        <!-- Get In Touch -->
+        <div>
+          <h5 class="text-xl font-semibold mb-4">Get In Touch</h5>
+          <ul class="space-y-2 text-sm">
+            <li><strong>Address:</strong> 410, "SHAIL", Opp. Navrangpura Telephone Exchange, Nr. Madhusudan House, Off. C. G. Road, Ahmedabad-380006</li>
+            <li><strong>Call Us:</strong> (079) 26442206 / 30615664</li>
+            <li><strong>Email:</strong> <a href="mailto:info@ngamadia.com" class="hover:underline">info@ngamadia.com</a></li>
+          </ul>
+        </div>
+        <!-- About Links -->
+        <div>
+          <h5 class="text-xl font-semibold mb-4">About</h5>
+          <ul class="space-y-2 text-sm">
+            <li><a href="about-us.php" class="hover:text-primary transition">About N. Gamadia & Co.</a></li>
+            <li><a href="why-ngc.php" class="hover:text-primary transition">Why NGC</a></li>
+            <li><a href="management.php" class="hover:text-primary transition">Management</a></li>
+            <li><a href="our-team.php" class="hover:text-primary transition">Our Team</a></li>
+          </ul>
+        </div>
+        <!-- Resources -->
+        <div>
+          <h5 class="text-xl font-semibold mb-4">Resources</h5>
+          <ul class="space-y-2 text-sm">
+            <li><a href="forms.php" class="hover:text-primary transition">Forms</a></li>
+            <li><a href="kpo.php" class="hover:text-primary transition">KPO</a></li>
+            <li><a href="news-updates.php" class="hover:text-primary transition">News & Updates</a></li>
+            <li><a href="gallery.php" class="hover:text-primary transition">Gallery</a></li>
+          </ul>
+        </div>
+        <!-- Newsletter -->
+        <div>
+          <h5 class="text-xl font-semibold mb-4">Newsletter</h5>
+          <p class="mb-2 text-sm">Subscribe for updates. No spam, ever.</p>
+          <form class="flex space-x-2" onsubmit="event.preventDefault(); newsletterSubscribe();">
+            <input type="email" id="newsletter-email" placeholder="Your Email" required class="flex-1 px-3 py-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary bg-gray-800 text-white" />
+            <button type="submit" class="px-4 py-2 bg-primary rounded-xl hover:bg-primary-dark transition">
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </button>
+          </form>
+          <div class="mt-4 flex space-x-4 text-xl justify-center md:justify-start">
+            <a href="#" class="hover:text-primary"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="hover:text-primary"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="hover:text-primary"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="hover:text-primary"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Bottom bar -->
+      <div class="border-t border-gray-700 pt-4 flex flex-col md:flex-row items-center justify-between text-sm">
+        <div>&copy; 2024 N. Gamadia &amp; Co. | <a href="#" class="hover:underline hover:text-primary">Terms & Conditions</a></div>
+        <img src="../images/ngamadia-white.png" alt="N. Gamadia & Co." class="h-12 opacity-80 my-4 md:my-0" />
+        <div>Designed by <a href="index.html" target="_blank" class="hover:underline hover:text-primary">City Business Group</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    // Mobile menu toggle
+    document.getElementById('menu-toggle').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+    
+    // Newsletter subscription
+    function newsletterSubscribe() {
+      const email = document.getElementById('newsletter-email').value;
+      alert(`Thank you for subscribing with ${email}! We'll keep you updated.`);
+      document.getElementById('newsletter-email').value = '';
+    }
+    
+    // Tab functionality
+    document.querySelectorAll('.tab-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        // Remove active class from all buttons and content
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+          btn.classList.remove('active');
+          btn.classList.add('bg-gray-200', 'text-gray-700');
+          btn.classList.remove('bg-primary', 'text-white');
+        });
+        
+        // Hide all tab content
+        document.querySelectorAll('.tab-content').forEach(content => {
+          content.classList.remove('active');
+        });
+        
+        // Add active class to clicked button
+        button.classList.add('active');
+        button.classList.remove('bg-gray-200', 'text-gray-700');
+        button.classList.add('bg-primary', 'text-white');
+        
+        // Show corresponding tab content
+        const tabId = button.getAttribute('data-tab');
+        document.getElementById(tabId).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us | N. Gamadia & Co., Ahmedabad</title>
+  
+  <!-- SEO Meta -->
+  <meta name="description" content="Contact N. Gamadia & Co., leading Chartered Accountants in Ahmedabad for expert financial advice and consultation." />
+  <meta property="og:title" content="Contact Us | N. Gamadia & Co." />
+  <meta property="og:description" content="Get in touch with our team of Chartered Accountants for expert financial advice and consultation." />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome CDN -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1e40af', // Blue color for primary elements
+            'primary-dark': '#1e3a8a', // Darker blue for hover states
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    .gradient-bg {
+      background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+    }
+    
+    .hover-lift {
+      transition: all 0.3s ease;
+    }
+    
+    .hover-lift:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    
+    .contact-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 15px;
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+<body class="font-sans bg-gray-100 text-gray-700">
+
+  <!-- Top Bar -->
+  <div class="bg-gray-900 text-gray-100 text-sm">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center py-2">
+      <ul class="flex space-x-6">
+        <li class="flex items-center space-x-2"><i class="fas fa-map-marker-alt"></i> <span>Ahmedabad, Gujarat, India</span></li>
+        <li class="flex items-center space-x-2"><i class="fas fa-envelope"></i> <span>info@ngamadia.com</span></li>
+        <li class="flex items-center space-x-2"><i class="fas fa-phone"></i> <span>+91 98252 05794</span></li>
+      </ul>
+      <div class="hidden md:flex space-x-4">
+        <a href="#" class="hover:text-primary" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-primary" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-primary" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+  
+ <!-- Header & Navigation -->
+<header class="sticky top-0 backdrop-blur bg-white/80 shadow-md z-50">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-3 flex items-center justify-between">
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="../images/ngamadia.png" alt="N. Gamadia & Co." class="h-10 w-auto" />
+      <div class="font-semibold text-xl text-primary">N. Gamadia &amp; Co.</div>
+    </a>
+
+    <!-- Mobile menu button -->
+    <button id="navToggle" class="md:hidden p-2 rounded-full border border-gray-300 hover:bg-gray-100" aria-label="Menu">
+      <i class="fa fa-bars"></i>
+    </button>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
+      <a class="hover:text-primary" href="index.html">Home</a>
+
+      <!-- About Dropdown -->
+      <div class="relative group">
+        <button class="flex items-center hover:text-primary focus:outline-none">
+          About <i class="fa fa-chevron-down text-xs ml-1"></i>
+        </button>
+        <div class="absolute left-0 hidden group-hover:block bg-white rounded-xl shadow-md ring-1 ring-gray-200 p-4 w-64 z-50">
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="about-us.php.html">About N. Gamadia &amp; Co.</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="why-ngc.php.html">Why NGC</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="management.php.html">Management</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="our-team.php.html">Our Team</a>
+        </div>
+      </div>
+
+      <a class="hover:text-primary" href="kpo.php.html">KPO</a>
+      <a class="hover:text-primary" href="gallery.php.html">Gallery</a>
+
+      <!-- Services Dropdown -->
+      <div class="relative group">
+        <button class="flex items-center hover:text-primary focus:outline-none">
+          Services <i class="fa fa-chevron-down text-xs ml-1"></i>
+        </button>
+        <div class="absolute left-0 hidden group-hover:block bg-white rounded-xl shadow-md ring-1 ring-gray-200 p-4 w-72 z-50">
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="audit-and-assurance.php.html">Audit & Assurance</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="taxation.php.html">Taxation</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="accounting-advisory.php.html">Accounting Advisory Services</a>
+          
+        </div>
+      </div>
+
+      <a class="hover:text-primary" href="forms.php.html">Forms</a>
+      <a class="hover:text-primary" href="contact.php.html">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Mobile Drawer -->
+  <div id="navDrawer" class="hidden md:hidden px-4 py-4 bg-white rounded-xl shadow-md space-y-2" role="dialog" aria-modal="true">
+    <a class="block px-3 py-2 rounded-lg hover:bg-gray-100" href="index.html">Home</a>
+
+    <!-- About Dropdown -->
+    <details class="px-3 py-2 rounded-lg hover:bg-gray-100">
+      <summary class="cursor-pointer flex items-center justify-between">About <i class="fa fa-chevron-down text-xs ml-1"></i></summary>
+      <div class="ml-4 mt-2 space-y-2">
+        <a class="block hover:text-primary" href="about-us.php.html">About N. Gamadia &amp; Co.</a>
+        <a class="block hover:text-primary" href="why-ngc.php.html">Why NGC</a>
+        <a class="block hover:text-primary" href="management.php.html">Management</a>
+        <a class="block hover:text-primary" href="our-team.php.html">Our Team</a>
+      </div>
+    </details>
+
+    <a class="block px-3 py-2 rounded-lg hover:bg-gray-100" href="kpo.php.html">KPO</a>
+    <a class="block px-3 py-2 rounded-lg hover:bg-gray-100" href="gallery.php.html">Gallery</a>
+
+    <!-- Services Dropdown -->
+    <details class="px-3 py-2 rounded-lg hover:bg-gray-100">
+      <summary class="cursor-pointer flex items-center justify-between">Services <i class="fa fa-chevron-down text-xs ml-1"></i></summary>
+      <div class="ml-4 mt-2 space-y-2">
+        <a class="block hover:text-primary" href="audit-and-assurance.php.html">Audit & Assurance</a>
+        <a class="block hover:text-primary" href="taxation.php.html">Taxation</a>
+        <a class="block hover:text-primary" href="accounting-advisory.php.html">Accounting Advisory Services</a>
+      
+      </div>
+    </details>
+
+    <a class="block px-3 py-2 rounded-lg hover:bg-gray-100" href="forms.php.html">Forms</a>
+    <a class="block px-3 py-2 rounded-lg hover:bg-gray-100" href="contact.php.html">Contact</a>
+  </div>
+</header>
+
+
+  <!-- Hero Banner -->
+  <section class="relative bg-cover bg-center h-96" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(30,64,175,0.7)), url('https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+    <div class="absolute inset-0 flex items-center justify-center px-4 py-20 text-white">
+      <div class="max-w-3xl text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
+        <p class="mb-6 text-lg md:text-xl">Get in touch with our team of Chartered Accountants for expert financial advice and consultation.</p>
+        <a href="#contact-form" class="inline-block px-6 py-3 bg-primary text-white rounded-xl font-semibold hover:bg-primary-dark transition hover-lift">Send a Message</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-4 py-12 space-y-12">
+
+    <!-- Contact Intro Section -->
+    <section class="bg-white p-8 rounded-lg shadow-md text-center">
+      <h2 class="text-3xl font-bold mb-4 text-gray-800">Get In Touch</h2>
+      <p class="mb-4 text-gray-600 max-w-3xl mx-auto">
+        We're here to help and answer any questions you may have. Reach out to us and we'll respond as soon as we can.
+      </p>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="grid md:grid-cols-3 gap-8">
+      <!-- Office Location -->
+      <div class="bg-white p-6 rounded-lg shadow-md hover-lift text-center">
+        <div class="contact-icon gradient-bg text-white">
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3 text-gray-800">Our Office</h3>
+        <p class="text-gray-600">
+          410, "SHAIL", Opp. Navrangpura Telephone Exchange,<br>
+          Nr. Madhusudan House, Off. C. G. Road,<br>
+          Ahmedabad-380006
+        </p>
+      </div>
+
+      <!-- Phone Number -->
+      <div class="bg-white p-6 rounded-lg shadow-md hover-lift text-center">
+        <div class="contact-icon gradient-bg text-white">
+          <i class="fas fa-phone"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3 text-gray-800">Phone Number</h3>
+        <p class="text-gray-600">
+          <a href="tel:+919825205794" class="hover:text-primary transition">+91 98252 05794</a><br>
+          <a href="tel:+912642206" class="hover:text-primary transition">(079) 2642206</a>
+        </p>
+      </div>
+
+      <!-- Email Address -->
+      <div class="bg-white p-6 rounded-lg shadow-md hover-lift text-center">
+        <div class="contact-icon gradient-bg text-white">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-3 text-gray-800">Email Address</h3>
+        <p class="text-gray-600">
+          <a href="mailto:info@ngamadia.com" class="hover:text-primary transition">info@ngamadia.com</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="bg-white p-8 rounded-lg shadow-md">
+      <h2 class="text-3xl font-bold mb-6 text-gray-800">Send Us a Message</h2>
+      
+      <form class="space-y-6">
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <label for="full-name" class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+            <input type="text" id="full-name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Enter your full name">
+          </div>
+          
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Enter your email">
+          </div>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+            <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Enter your phone number">
+          </div>
+          
+          <div>
+            <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+            <input type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Enter subject">
+          </div>
+        </div>
+        
+        <div>
+          <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+          <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Enter your message"></textarea>
+        </div>
+        
+        <button type="submit" class="w-full md:w-auto px-6 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary-dark transition flex items-center justify-center">
+          <i class="fas fa-paper-plane mr-2"></i> Send Message
+        </button>
+      </form>
+    </section>
+
+    <!-- Map Section -->
+    <section class="bg-white p-8 rounded-lg shadow-md">
+      <h2 class="text-3xl font-bold mb-6 text-gray-800">Our Location</h2>
+      <div class="h-96 w-full rounded-lg overflow-hidden">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.773535953001!2d72.55774187613451!3d23.03208587916708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e853ac1e5bb95%3A0x1b929668171ff5e2!2sN.%20Gamadia%20%26%20Co!5e0!3m2!1sen!2sin!4v1758046137915!5m2!1sen!2sin" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Business Hours Section -->
+    <section class="bg-gradient-to-r from-primary to-primary-dark text-white p-8 rounded-2xl text-center">
+      <h2 class="text-3xl font-bold mb-4">Business Hours</h2>
+      <div class="grid md:grid-cols-3 gap-6 max-w-2xl mx-auto">
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Monday - Friday</h3>
+          <p>9:00 AM - 6:00 PM</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Saturday</h3>
+          <p>10:00 AM - 2:00 PM</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Sunday</h3>
+          <p>Closed</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-200 py-8 mt-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8 mb-6">
+        <!-- Get In Touch -->
+        <div>
+          <h5 class="text-xl font-semibold mb-4">Get In Touch</h5>
+          <ul class="space-y-2 text-sm">
+            <li><strong>Address:</strong> 410, "SHAIL", Opp. Navrangpura Telephone Exchange, Nr. Madhusudan House, Off. C. G. Road, Ahmedabad-380006</li>
+            <li><strong>Call Us:</strong> (079) 26442206 / 30615664</li>
+            <li><strong>Email:</strong> <a href="mailto:info@ngamadia.com" class="hover:underline">info@ngamadia.com</a></li>
+          </ul>
+        </div>
+        <!-- About Links -->
+        <div>
+          <h5 class="text-xl font-semibold mb-4">About</h5>
+          <ul class="space-y-2 text-sm">
+            <li><a href="about-us.php" class="hover:text-primary transition">About N. Gamadia & Co.</a></li>
+            <li><a href="why-ngc.php" class="hover:text-primary transition">Why NGC</a></li>
+            <li><a href="management.php" class="hover:text-primary transition">Management</a></li>
+            <li><a href="our-team.php" class="hover:text-primary transition">Our Team</a></li>
+          </ul>
+        </div>
+        <!-- Resources -->
+        <div>
+          <h5 class="text-xl font-semibold mb-4">Resources</h5>
+          <ul class="space-y-2 text-sm">
+            <li><a href="forms.php" class="hover:text-primary transition">Forms</a></li>
+            <li><a href="kpo.php" class="hover:text-primary transition">KPO</a></li>
+            <li><a href="news-updates.php" class="hover:text-primary transition">News & Updates</a></li>
+            <li><a href="gallery.php" class="hover:text-primary transition">Gallery</a></li>
+          </ul>
+        </div>
+        <!-- Newsletter -->
+        <div>
+          <h5 class="text-xl font-semibold mb-4">Newsletter</h5>
+          <p class="mb-2 text-sm">Subscribe for updates. No spam, ever.</p>
+          <form class="flex space-x-2" onsubmit="event.preventDefault(); newsletterSubscribe();">
+            <input type="email" id="newsletter-email" placeholder="Your Email" required class="flex-1 px-3 py-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary bg-gray-800 text-white" />
+            <button type="submit" class="px-4 py-2 bg-primary rounded-xl hover:bg-primary-dark transition">
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </button>
+          </form>
+          <div class="mt-4 flex space-x-4 text-xl justify-center md:justify-start">
+            <a href="#" class="hover:text-primary"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="hover:text-primary"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="hover:text-primary"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="hover:text-primary"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Bottom bar -->
+      <div class="border-t border-gray-700 pt-4 flex flex-col md:flex-row items-center justify-between text-sm">
+        <div>&copy; 2024 N. Gamadia &amp; Co. | <a href="#" class="hover:underline hover:text-primary">Terms & Conditions</a></div>
+        <img src="../images/ngamadia-white.png" alt="N. Gamadia & Co." class="h-12 opacity-80 my-4 md:my-0" />
+        <div>Designed by <a href="index.html" target="_blank" class="hover:underline hover:text-primary">City Business Group</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    // Mobile menu toggle
+    document.getElementById('menu-toggle').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+    
+    // Newsletter subscription
+    function newsletterSubscribe() {
+      const email = document.getElementById('newsletter-email').value;
+      alert(`Thank you for subscribing with ${email}! We'll keep you updated.`);
+      document.getElementById('newsletter-email').value = '';
+    }
+    
+    // Form submission
+    document.querySelector('form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your message! We will get back to you soon.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>

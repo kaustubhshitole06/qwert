@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Taxation & Compliance | N. Gamadia & Co., Ahmedabad</title>
+  
+  <!-- SEO Meta -->
+  <meta name="description" content="Expert taxation and compliance services by Chartered Accountants in Ahmedabad, India." />
+  <meta property="og:title" content="Taxation & Compliance | N. Gamadia & Co." />
+  <meta property="og:description" content="Trusted Chartered Accountants in Ahmedabad providing taxation, GST, and compliance services." />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome CDN -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1e40af', // Blue color for primary elements
+            'primary-dark': '#1e3a8a', // Darker blue for hover states
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    .gradient-bg {
+      background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+    }
+    
+    .hover-lift {
+      transition: all 0.3s ease;
+    }
+    
+    .hover-lift:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    
+    .service-icon {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 1.8rem;
+    }
+  </style>
+</head>
+<body class="font-sans bg-gray-100 text-gray-700">
+
+  <!-- Top Bar -->
+  <div class="bg-gray-900 text-gray-100 text-sm">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center py-2">
+      <ul class="flex space-x-6">
+        <li class="flex items-center space-x-2"><i class="fas fa-map-marker-alt"></i> <span>Ahmedabad, Gujarat, India</span></li>
+        <li class="flex items-center space-x-2"><i class="fas fa-envelope"></i> <span>info@ngamadia.com</span></li>
+        <li class="flex items-center space-x-2"><i class="fas fa-phone"></i> <span>+91 98252 05794</span></li>
+      </ul>
+      <div class="hidden md:flex space-x-4">
+        <a href="#" class="hover:text-primary" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-primary" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-primary" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+ <!-- Header & Navigation -->
+<header class="sticky top-0 backdrop-blur bg-white/80 shadow-md z-50">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-3 flex items-center justify-between">
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="../images/ngamadia.png" alt="N. Gamadia & Co." class="h-10 w-auto" />
+      <div class="font-semibold text-xl text-primary">N. Gamadia &amp; Co.</div>
+    </a>
+
+    <!-- Mobile menu button -->
+    <button id="navToggle" class="md:hidden p-2 rounded-full border border-gray-300 hover:bg-gray-100" aria-label="Menu">
+      <i class="fa fa-bars"></i>
+    </button>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
+      <a class="hover:text-primary" href="index.html">Home</a>
+
+      <!-- About Dropdown -->
+      <div class="relative group">
+        <button class="flex items-center hover:text-primary focus:outline-none">
+          About <i class="fa fa-chevron-down text-xs ml-1"></i>
+        </button>
+        <div class="absolute left-0 hidden group-hover:block bg-white rounded-xl shadow-md ring-1 ring-gray-200 p-4 w-64 z-50">
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="about-us.php.html">About N. Gamadia &amp; Co.</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="why-ngc.php.html">Why NGC</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="management.php.html">Management</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="our-team.php.html">Our Team</a>
+        </div>
+      </div>
+
+      <a class="hover:text-primary" href="kpo.php.html">KPO</a>
+      <a class="hover:text-primary" href="gallery.php.html">Gallery</a>
+
+      <!-- Services Dropdown -->
+      <div class="relative group">
+        <button class="flex items-center hover:text-primary focus:outline-none">
+          Services <i class="fa fa-chevron-down text-xs ml-1"></i>
+        </button>
+        <div class="absolute left-0 hidden group-hover:block bg-white rounded-xl shadow-md ring-1 ring-gray-200 p-4 w-72 z-50">
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="audit-and-assurance.php.html">Audit & Assurance</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="taxation.php.html">Taxation</a>
+          <a class="block px-3 py-2 rounded-lg hover:bg-gray-50" href="accounting-advisory.php.html">Accounting Advisory Services</a>
+          
+        </div>
+      </div>
+
+      <a class="hover:text-primary" href="forms.php.html">Forms</a>
+      <a class="hover:text-primary" href="contact.php.html">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Mobile Drawer -->
+  <div id="navDrawer" class="hidden md:hidden px-4 py-4 bg-white rounded-xl shadow-md space-y-2" role="dialog" aria-modal="true">
+    <a class="block px-3 py-2 rounded-lg hover:bg-gray-100" href="index.html">Home</a>
+
+    <!-- About Dropdown -->
+    <details class="px-3 py-2 rounded-lg hover:bg-gray-100">
+      <summary class="cursor-pointer flex items-center justify-between">About <i class="fa fa-chevron-down text-xs ml-1"></i></summary>
+      <div class="ml-4 mt-2 space-y-2">
+        <a class="block hover:text-primary" href="about-us.php.html">About N. Gamadia &amp; Co.</a>
+        <a class="block hover:text-primary" href="why-ngc.php.html">Why NGC</a>
+        <a class="block hover:text-primary" href="management.php.html">Management</a>
+        <a class="block hover:text-primary" href="our-team.php.html">Our Team</a>
+      </div>
+    </details>
+
+    <a class="block px-3 py-2 rounded-lg hover:bg-gray-100" href="kpo.php.html">KPO</a>
+    <a class="block px-3 py-2 rounded-lg hover:bg-gray-100" href="gallery.php.html">Gallery</a>
+
+    <!-- Services Dropdown -->
+    <details class="px-3 py-2 rounded-lg hover:bg-gray-100">
+      <summary class="cursor-pointer flex items-center justify-between">Services <i class="fa fa-chevron-down text-xs ml-1"></i></summary>
+      <div class="ml-4 mt-2 space-y-2">
+        <a class="block hover:text-primary" href="audit-and-assurance.php.html">Audit & Assurance</a>
+        <a class="block hover:text-primary" href="taxation.php.html">Taxation</a>
+        <a class="block hover:text-primary" href="accounting-advisory.php.html">Accounting Advisory Services</a>
+      
+      </div>
+    </details>
+
+    <a class="block px-3 py-2 rounded-lg hover:bg-gray-100" href="forms.php.html">Forms</a>
+    <a class="block px-3 py-2 rounded-lg hover:bg-gray-100" href="contact.php.html">Contact</a>
+  </div>
+</header>
+
+  <!-- Hero Banner -->
+  <section class="relative bg-cover bg-center h-96" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');">
+    <div class="absolute inset-0 flex items-center justify-center px-4 py-20 text-white">
+      <div class="max-w-3xl text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Taxation & Compliance</h1>
+        <p class="mb-6 text-lg md:text-xl">Ensuring accurate tax planning, filing, and compliance with all statutory regulations.</p>
+        <a href="contact.php" class="inline-block px-6 py-3 bg-primary text-white rounded-xl font-semibold hover:bg-primary-dark transition hover-lift">Consult Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-4 py-12 space-y-12">
+
+    <!-- Section: About Taxation -->
+    <section class="bg-white p-8 rounded-lg shadow-md">
+      <h2 class="text-3xl font-bold mb-4 text-gray-800">Taxation & Compliance Services</h2>
+      <p class="mb-4 text-gray-600" align="justify">
+        We provide comprehensive taxation services that cover direct and indirect taxes, GST, and regulatory compliances. Our aim is to help businesses and individuals achieve tax efficiency while ensuring compliance with all laws.
+      </p>
+      <p class="mb-4 text-gray-600" align="justify">
+        Our taxation team specializes in tax advisory, compliance, and representation before authorities, ensuring accuracy and minimizing risks.
+      </p>
+    </section>
+
+    <!-- Services Cards -->
+    <section class="grid md:grid-cols-3 gap-8">
+      <!-- Service 1: Direct Taxation -->
+      <div class="bg-white p-6 rounded-lg shadow-md hover-lift">
+        <div class="service-icon gradient-bg text-white">
+          <i class="fas fa-file-invoice-dollar"></i>
+        </div>
+        <h3 class="text-2xl font-bold mb-3 text-center text-gray-800">Direct Taxation</h3>
+        <p class="text-gray-600 text-center">Income Tax planning, filing, assessments, corporate taxation, and advisory services for businesses & individuals.</p>
+        <ul class="mt-4 space-y-2">
+          <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Income Tax Planning & Filing</li>
+          <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Corporate Tax Advisory</li>
+          <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Tax Assessment Representation</li>
+          <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Personal Tax Advisory</li>
+        </ul>
+      </div>
+
+      <!-- Service 2: Indirect Taxation -->
+      <div class="bg-white p-6 rounded-lg shadow-md hover-lift">
+        <div class="service-icon gradient-bg text-white">
+          <i class="fas fa-receipt"></i>
+        </div>
+        <h3 class="text-2xl font-bold mb-3 text-center text-gray-800">Indirect Taxation</h3>
+        <p class="text-gray-600 text-center">GST registrations, returns, audits, and advisory for compliance with evolving indirect tax laws.</p>
+        <ul class="mt-4 space-y-2">
+          <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> GST Registration & Filing</li>
+          <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> GST Audit & Advisory</li>
+          <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Input Tax Credit Optimization</li>
+          <li class="fas fa-check text-primary mr-2"></i> GST Litigation Support</li>
+        </ul>
+      </div>
+
+      <!-- Service 3: Regulatory Compliance -->
+      <div class="bg-white p-6 rounded-lg shadow-md hover-lift">
+        <div class="service-icon gradient-bg text-white">
+          <i class="fas fa-balance-scale"></i>
+        </div>
+        <h3 class="text-2xl font-bold mb-3 text-center text-gray-800">Regulatory Compliance</h3>
+        <p class="text-gray-600 text-center">End-to-end compliance management including ROC filings, FEMA, RBI compliance, and statutory reporting.</p>
+        <ul class="mt-4 space-y-2">
+          <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> ROC Filings & Compliance</li>
+          <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> FEMA & RBI Advisory</li>
+          <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Statutory Reporting</li>
+          <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Regulatory Advisory</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Additional Services Section -->
+    <section class="bg-white p-8 rounded-lg shadow-md">
+      <h2 class="text-3xl font-bold mb-6 text-gray-800">Our Comprehensive Tax Solutions</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-xl font-semibold mb-3 text-primary">For Businesses</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-start"><i class="fas fa-arrow-right text-primary mt-1 mr-2"></i> Corporate tax planning and strategy</li>
+            <li class="flex items-start"><i class="fas fa-arrow-right text-primary mt-1 mr-2"></i> Transfer pricing documentation and compliance</li>
+            <li class="flex items-start"><i class="fas fa-arrow-right text-primary mt-1 mr-2"></i> Tax due diligence for mergers and acquisitions</li>
+            <li class="flex items-start"><i class="fas fa-arrow-right text-primary mt-1 mr-2"></i> International taxation and DTAA advisory</li>
+            <li class="flex items-start"><i class="fas fa-arrow-right text-primary mt-1 mr-2"></i> Withholding tax compliance and advisory</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-3 text-primary">For Individuals</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-start"><i class="fas fa-arrow-right text-primary mt-1 mr-2"></i> Personal tax planning and optimization</li>
+            <li class="flex items-start"><i class="fas fa-arrow-right text-primary mt-1 mr-2"></i> Tax residency and NRI taxation</li>
+            <li class="flex items-start"><i class="fas fa-arrow-right text-primary mt-1 mr-2"></i> Capital gains tax planning</li>
+            <li class="flex items-start"><i class="fas fa-arrow-right text-primary mt-1 mr-2"></i> Tax audit representation</li>
+            <li class="flex items-start"><i class="fas fa-arrow-right text-primary mt-1 mr-2"></i> Wealth and inheritance tax advisory</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="bg-gradient-to-r from-primary to-primary-dark text-white p-8 rounded-2xl">
+      <h2 class="text-3xl font-bold mb-6 text-center">Why Choose NGC for Taxation Services?</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-primary mx-auto mb-4">
+            <i class="fas fa-user-tie text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Expert Team</h3>
+          <p>Qualified professionals with extensive experience in taxation laws</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-white rounded-full flex items-center justify-content text-primary mx-auto mb-4">
+            <i class="fas fa-clock text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Timely Compliance</h3>
+          <p>Ensuring all filings and compliances are completed before deadlines</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-primary mx-auto mb-4">
+            <i class="fas fa-shield-alt text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Risk Mitigation</h3>
+          <p>Proactive approach to minimize tax risks and penalties</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-white p-8 rounded-lg shadow-md text-center">
+      <h2 class="text-3xl font-bold mb-4 text-gray-800">Ready for Hassle-Free Tax Compliance?</h2>
+      <p class="mb-6 max-w-2xl mx-auto text-gray-600">Let our experts handle your taxation needs while you focus on growing your business.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="contact.php" class="inline-block px-6 py-3 bg-primary text-white rounded-xl font-semibold hover:bg-primary-dark transition">Contact Us Today</a>
+        <a href="tel:+919825205794" class="inline-block px-6 py-3 border-2 border-primary text-primary rounded-xl font-semibold hover:bg-primary hover:text-white transition">
+          <i class="fas fa-phone mr-2"></i> Call Now
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-200 py-8 mt-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8 mb-6">
+        <!-- Get In Touch -->
+        <div>
+          <h5 class="text-xl font-semibold mb-4">Get In Touch</h5>
+          <ul class="space-y-2 text-sm">
+            <li><strong>Address:</strong> 410, "SHAIL", Opp. Navrangpura Telephone Exchange, Nr. Madhusudan House, Off. C. G. Road, Ahmedabad-380006</li>
+            <li><strong>Call Us:</strong> (079) 26442206 / 30615664</li>
+            <li><strong>Email:</strong> <a href="mailto:info@ngamadia.com" class="hover:underline">info@ngamadia.com</a></li>
+          </ul>
+        </div>
+        <!-- About Links -->
+        <div>
+          <h5 class="text-xl font-semibold mb-4">About</h5>
+          <ul class="space-y-2 text-sm">
+            <li><a href="about-us.php" class="hover:text-primary transition">About N. Gamadia & Co.</a></li>
+            <li><a href="why-ngc.php" class="hover:text-primary transition">Why NGC</a></li>
+            <li><a href="management.php" class="hover:text-primary transition">Management</a></li>
+            <li><a href="our-team.php" class="hover:text-primary transition">Our Team</a></li>
+          </ul>
+        </div>
+        <!-- Resources -->
+        <div>
+          <h5 class="text-xl font-semibold mb-4">Resources</h5>
+          <ul class="space-y-2 text-sm">
+            <li><a href="forms.php" class="hover:text-primary transition">Forms</a></li>
+            <li><a href="kpo.php" class="hover:text-primary transition">KPO</a></li>
+            <li><a href="news-updates.php" class="hover:text-primary transition">News & Updates</a></li>
+            <li><a href="gallery.php" class="hover:text-primary transition">Gallery</a></li>
+          </ul>
+        </div>
+        <!-- Newsletter -->
+        <div>
+          <h5 class="text-xl font-semibold mb-4">Newsletter</h5>
+          <p class="mb-2 text-sm">Subscribe for updates. No spam, ever.</p>
+          <form class="flex space-x-2" onsubmit="event.preventDefault(); newsletterSubscribe();">
+            <input type="email" id="newsletter-email" placeholder="Your Email" required class="flex-1 px-3 py-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary bg-gray-800 text-white" />
+            <button type="submit" class="px-4 py-2 bg-primary rounded-xl hover:bg-primary-dark transition">
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </button>
+          </form>
+          <div class="mt-4 flex space-x-4 text-xl justify-center md:justify-start">
+            <a href="#" class="hover:text-primary"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="hover:text-primary"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="hover:text-primary"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="hover:text-primary"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Bottom bar -->
+      <div class="border-t border-gray-700 pt-4 flex flex-col md:flex-row items-center justify-between text-sm">
+        <div>&copy; 2024 N. Gamadia &amp; Co. | <a href="#" class="hover:underline hover:text-primary">Terms & Conditions</a></div>
+        <img src="../images/ngamadia-white.png" alt="N. Gamadia & Co." class="h-12 opacity-80 my-4 md:my-0" />
+        <div>Designed by <a href="index.html" target="_blank" class="hover:underline hover:text-primary">City Business Group</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    // Mobile menu toggle
+    document.getElementById('menu-toggle').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+    
+    // Newsletter subscription
+    function newsletterSubscribe() {
+      const email = document.getElementById('newsletter-email').value;
+      alert(`Thank you for subscribing with ${email}! We'll keep you updated.`);
+      document.getElementById('newsletter-email').value = '';
+    }
+  </script>
+</body>
+</html>
